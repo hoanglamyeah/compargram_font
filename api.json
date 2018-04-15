@@ -1,0 +1,138 @@
+{
+  "name": "Apple",
+  "description": "Apple description",
+  "photos": 1,
+  "classify": "fruit",
+  "data": [
+    {
+      "data": "20 Gram",
+      "name": "Vitamin A",
+      "type": "tag"
+    },
+    {
+      "data": "21 Gram",
+      "name": "Vitamin B",
+      "type": "tag"
+    },
+    {
+      "data": "22 Gram",
+      "name": "Vitamin C",
+      "type": "tag"
+    },
+    {
+      "data": "An apple is a sweet, edible fruit produced by an apple tree (Malus pumila). Apple trees are cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. ",
+      "name": "Description",
+      "type": "text"
+    },
+    {
+      "data": [
+        "Sweet",
+        "Sour"
+      ],
+      "name": "Taste",
+      "type": "list"
+    },
+    {
+      "data": [
+        "Red",
+        "Yellow",
+        "Green"
+      ],
+      "name": "Color",
+      "type": "list"
+    },
+    {
+      "data": "1 mg",
+      "name": "Sodium",
+      "type": "tag"
+    },
+    {
+      "data": "107 mg",
+      "name": "Potassium",
+      "type": "tag"
+    },
+    {
+      "data": "6 mg",
+      "name": "Calcium",
+      "type": "tag"
+    },
+    {
+      "data": "0.12 mg",
+      "name": "Iron",
+      "type": "tag"
+    },
+    {
+      "data": "5 mg",
+      "name": "Magnesium",
+      "type": "tag"
+    },
+    {
+      "data": "11 mg",
+      "name": "Phosphorus",
+      "type": "tag"
+    },
+    {
+      "data": "0.04 mg",
+      "name": "Zinc",
+      "type": "tag"
+    },
+    {
+      "data": "27 μg",
+      "name": "Carotene-β",
+      "type": "tag"
+    },
+    {
+      "data": "11 μg",
+      "name": "Crypto-xanthin-β",
+      "type": "tag"
+    },
+    {
+      "data": "29 μg",
+      "name": "Lutein-zeaxanthin",
+      "type": "tag"
+    },
+    {
+      "data": "85.56 g",
+      "name": "Water",
+      "type": "tag"
+    },
+    {
+      "data": "52 Kcal",
+      "name": "Energy",
+      "type": "tag"
+    },
+    {
+      "data": "13.81 g",
+      "name": "Carbohydrates",
+      "type": "tag"
+    },
+    {
+      "data": "0.26 g",
+      "name": "Protein",
+      "type": "tag"
+    },
+    {
+      "data": "0.17 g",
+      "name": "Total Fat",
+      "type": "tag"
+    },
+    {
+      "data": "0 mg",
+      "name": "Cholesterol",
+      "type": "tag"
+    },
+    {
+      "data": "2.40 g",
+      "name": "Dietary Fiber",
+      "type": "tag"
+    },
+    {
+      "data": {
+        "full_size": "http://127.0.0.1:8000/media/images/12a4c6dc4fb044b79f809c73ef2efa6e.jpg",
+        "medium_square_crop": "http://127.0.0.1:8000/media/__sized__/images/12a4c6dc4fb044b79f809c73ef2efa6e-crop-c0-5__0-5-400x400-70.jpg"
+      },
+      "name": "Seed",
+      "type": "image"
+    }
+  ]
+}

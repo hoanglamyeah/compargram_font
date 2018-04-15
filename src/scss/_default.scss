@@ -1,0 +1,295 @@
+@import url('http://fonts.googleapis.com/css?family=Lora');
+
+body {
+  font-family: Ubuntu, Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  background: #eeeeee;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.inner {
+  max-width: 888px;
+  margin: 0px auto;
+  padding: 20px 10px;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  background: #3e352e;
+  .inner {
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1005;
+    .responsive-menu {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .accordion-menu {
+      .is-accordion-submenu a {
+        padding: 10px;
+      }
+      ul {
+        background: #1a8860;
+        margin: 0px;
+      }
+      li {
+        border-bottom: 1px solid #8a8a8a;
+        a:after {
+          border-color: #ece9cf transparent transparent !important;
+        }
+        a {
+          padding: 10px;
+        }
+      }
+      li:last-child {
+        border-bottom: 0px solid #8a8a8a;
+      }
+    }
+    .top-bar {
+      .dropdown {
+        li.is-dropdown-submenu-parent > a::after {
+          border-color: #84a297 transparent transparent;
+        }
+        .submenu {
+          margin-top: 0px;
+          border: 0;
+          a {
+            color: #fff;
+            text-transform: none;
+            :hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      a {
+        color: #ece9cf;
+        font-family: Ubuntu, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  .logo {
+    height: 44px;
+    width: 160px;
+    float: left;
+    position: relative;
+    a {
+      color: #fefefe !important;
+      font-size: 23px !important;
+      margin-left: 15px;
+      position: absolute;
+      bottom: 7px;
+      padding: 0;
+      text-transform: unset !important;
+      font-family: 'Pacifico', cursive !important;
+      span {
+        color: #3de688;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+main {
+  margin: 0 auto;
+  background: #fff;
+  .inner {
+    padding: 30px 10px 60px;
+    .site-title {
+      position: relative;
+      .main {
+        background: #84a719;
+        color: white;
+        padding: 0 10px;
+        border-radius: 2px;
+        font-size: 35px;
+      }
+      .sub {
+        background: #84a719;
+        font-size: 13px;
+        color: #e4ff03;
+        position: absolute;
+        bottom: -11px;
+        left: 64%;
+        z-index: 0;
+        padding: 0 7px;
+      }
+    }
+  }
+  section {
+    .label {
+      margin-bottom: 3.3333px;
+    }
+    .button-group {
+      display: block;
+    }
+  }
+  aside {
+    .first {
+      margin-top: 57px;
+    }
+  }
+}
+
+footer {
+  .inner {
+    .credit {
+      text-align: center;
+    }
+    .menu {
+      li {
+        margin: 0 24px;
+        a {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+
+.top-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  font-size: 50px;
+  color: #82ecc6;
+}
+
+.clickable {
+  cursor: pointer !important;
+}
+
+.input-group {
+  margin-bottom: 10px !important;
+}
+
+.default.label {
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.account-information {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    .inner {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
+
+.compare-search {
+  margin: 0px 15px;
+  background: #ffffff;
+  padding: 0px 0px 0px;
+  border-radius: 3px;
+  .first {
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+  }
+  .last {
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+  }
+  .input-group-label {
+    border-left: 0;
+    border-right: 0;
+  }
+  .button-compare {
+    margin-bottom: 0px;
+    border-radius: 3px;
+    min-width: 120px;
+    padding: 15px;
+    background: green;
+    font-weight: bold;
+  }
+  .input-group-label {
+    padding: 0 1rem;
+    border: 0px solid #cacaca;
+    background: rgba(117, 168, 19, 0);
+    color: #fff;
+  }
+  .input-group-field {
+    font-size: 30px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #8a8a8a;
+  }
+}
+
+.custom-button {
+  display: inline-block;
+  color: #191919;
+  background: #F5F5F5;
+  border: 1px solid gainsboro;
+  border-radius: 1px;
+  font-size: 14px;
+  text-shadow: 0 1px 0 #FFFFFF;
+  cursor: pointer;
+  padding: 3px 15px;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: background 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: background 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+span.custom-button.current {
+  background: gainsboro;
+  color: #000;
+}
+
+.buy-amz {
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.mt-30 {
+  margin-bottom: 30px;
+}
+
+.table-border {
+  tr,
+  th,
+  td {
+    border: 1px solid #eaeae3;
+  }
+}
+
+.thing-wrap {
+  margin: 0!important;
+  background: #eee;
+  padding: 10px 0 0;
+  border: 1px solid #ddd;
+}
+
+.no-margin {
+  margin-right: 0!important;
+  margin-left: 0!important;
+}

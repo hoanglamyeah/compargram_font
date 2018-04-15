@@ -1,0 +1,101 @@
+.menu.medium-horizontal {
+  margin: 8px;
+}
+
+.menu {
+  li {
+    margin-right: 10px;
+  }
+  .is-active {
+    a {
+      background: #5b636a !important;
+      color: #ffffff !important;
+      border-radius: 2px 2px 0px 0px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+    }
+    .submenu {
+      min-width: 120px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+      a {
+        box-shadow: none;
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+.top-bar-right {
+  float: right;
+  .account {
+    background-color: #5c554b;
+    border-radius: 2px;
+  }
+}
+
+.dropdown.menu a {
+  padding: 10px 10px;
+}
+
+.accordion-menu {
+  .is-active {
+    a {
+      background: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+}
+
+.off-canvas {
+  h4 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.sidebar-menu {
+
+  @include menu-base();
+  @include menu-direction(vertical);
+  a {
+    color: #ffffff;
+    font-weight: normal;
+    padding: 10px;
+    font-weight: bold;
+  }
+  a.active {
+    color: #fafff8;
+  }
+}
+
+.sidebar-button {
+  position: fixed;
+  top: 45vh;
+  left: -3px;
+  background: #1a8860;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+is-dropdown-submenu {
+  display: none;
+}
+
+header nav.top-bar.accordion-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.breadcrumbs {
+  text-align: center;
+}
+.breadcrumbs li {
+    display: inline-block;
+    float: none;
+}

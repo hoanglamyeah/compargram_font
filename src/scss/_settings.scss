@@ -1,0 +1,96 @@
+@import '~foundation-sites/scss/util/util';
+
+// 1. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+$foundation-palette: (
+  primary: #1779ba,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fff;
+$body-background: $light-gray;
+$body-font-color: $black;
+$body-font-family: Ubuntu, Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-position: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-menu-padding: 0.7rem 1rem;
+$global-menu-nested-margin: 1rem;
+$global-text-direction: ltr;
+$global-flexbox: true;
+$global-prototype-breakpoints: false;
+$global-button-cursor: auto;
+$global-color-pick-contrast-tolerance: 0;
+$print-transparent-backgrounds: true;
+
+@include add-foundation-colors;
+
+// 1. Reset
+// ---------
+
+$topbar-padding : 0px;
+$topbar-background : none;
+$topbar-submenu-background: #016890;
+$menu-items-padding: 0;
+$topbar-title-spacing: 0;
+$dropdown-menu-item-color-active: #fff;
+$dropdownmenu-padding: 17px;
+$dropdownmenu-submenu-padding: 15px;
+$header-lineheight: 1.4;
+$header-margin-bottom: 17px;
+$header-font-family: Ubuntu,Georgia,sans-serif;
+$header-styles: (
+  'small': (
+    'h1': ('font-size': 26, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 22, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h3': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h4': ('font-size': 18, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h5': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h6': ('font-size': 14, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
+  )
+);
+
+$reveal-padding: 0px;
+$tab-content-border: none;
+$tab-content-padding:15px;
+$tab-item-padding:15px;
+$accordion-item-padding:10px;
+$accordion-content-padding:10px;
+$button-padding:10px;
+
+// 1. Off-canvas
+// --------------
+
+$offcanvas-sizes: (
+  small: 200px,
+);
+$offcanvas-vertical-sizes: (
+  small: 200px,
+);
+$offcanvas-background: #2d3532;
+$offcanvas-shadow: 0 0 0px rgba($black, 0.7);
+$offcanvas-inner-shadow-size: 0px;
+$offcanvas-inner-shadow-color: rgba($black, 0.25);
+$offcanvas-overlay-zindex: 11;
+$offcanvas-push-zindex: 12;
+$offcanvas-overlap-zindex: 13;
+$offcanvas-reveal-zindex: 12;
+$offcanvas-transition-length: 0.5s;
+$offcanvas-transition-timing: ease;
+$offcanvas-fixed-reveal: true;
+$offcanvas-exit-background: rgba($white, 0.25);
+$maincontent-class: 'off-canvas-content';
