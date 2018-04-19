@@ -5,39 +5,14 @@
 {% block description %}Compargram is a web application for comparison. We want to give you specific, accurate
     information to help you make the most informed choices about: vehicle, food, service...{% endblock %}
 {% block content %}
-    <div>
-        <h1 class="page-title site-title text-center">
-            COMPARGRAM.COM
+    <div class="home-middle">
+        <h1 class="page-title site-title text-center site-logo">
+            Compargram.com
         </h1>
         <section id="compare-box" class="compare-search">
         </section>
-        <section>{% for classify in classifies %}
-            <div class="row mt-30">
-                <div class="columns small-12 medium-6">
-                    <h2>{{ classify.name }}</h2>
-                    <p>{{ classify.description }}</p>
-                    <p><a href="/{{ classify.slug }}" class="custom-button">View all ›</a></p>
-                </div>{% for compare in classify.compare_list %}
-                <div class="columns small-6 medium-3 compare-list">
-                    <div class="compare-card">
-                        <div class="small-12 compare-card-top">
-                            <span class="model-icon">
-                                <img src="{{ compare.first.photos.featured.path.crop.64x64 }}" alt="{{ compare.first.name }}">
-                            </span>
-                            <span><i class="fa fa-compress" aria-hidden="true"></i></span>
-                            <span class="model-icon">
-                                <img src="{{ compare.second.photos.featured.path.crop.64x64 }}" alt="{{ compare.second.name }}">
-                            </span>
-                        </div>
-                        <div class="small-12 compare-card-middle">
-                            <a href="/{{ classify.slug }}/{{ compare.slug }}">{{ compare.first.name }} vs {{ compare.second.name }}</a>
-                        </div>
-                        <div class="small-12 compare-card-bottom">
-                            <a href="/{{ classify.slug }}/{{ compare.slug }}">See compare</a>
-                        </div>
-                    </div>
-                </div>{% endfor %}
-            </div>{% endfor %}
-        </section>
+        <div class="small-12 text-center text-color-primary">{% for classify in classifies %}
+            <a class="label clickable"  href="/{{ classify.slug }}">{{ classify.name }}</a>{% endfor %}
+        </div>
     </div>
 {% endblock %}
